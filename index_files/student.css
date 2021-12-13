@@ -1,0 +1,658 @@
+/*Далее представлены общие правила для студенческой части*/
+.current_exams, .student_achievements, .future_exams{
+    width: 1360px;
+    margin-bottom: 60px;
+}
+.current_exams .table, .student_achievements .table, .future_exams .table{
+    width: 100%;
+}
+.link_button{
+	height: auto;
+	background-color: #85DBF9;
+	box-shadow: none;
+	border-radius: 0;
+	padding-left: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 0.035em;
+}
+.current > .link_button{
+	background-color: #ffffff;
+}
+header .nav_ref_wrap:hover{
+	
+}
+header .nav_ref_wrap .link_button:hover{
+	cursor: pointer;
+	transform: scale(1.05);
+	-webkit-transition: 250ms;
+	-moz-transition: 250ms;
+	-o-transition: 250ms;
+	transition: 250ms;
+}
+.exam_language{
+	height: 40px;
+}
+.exam_link{
+	height : auto;
+	width: auto;
+	padding: 0;
+	color: #DC143C;
+	font-family: 'Open Sans', serif;
+	font-size: 14px;
+	text-decoration: underline;
+	border-radius: 0;
+	box-shadow: none;
+}
+.exam_link:hover{
+	cursor: pointer;
+}
+#button_view{
+    background: url("../img/view_details.svg") no-repeat !important;
+    width: 30px;
+    height: 30px;
+}
+/*Далее представлены правила для страницы "Студенческая часть - страница экзамена"*/
+.header_exam{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    background-color: #1b1464;
+    z-index: 200;
+}
+.header_exam div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_exam p{
+    font-size: 28px;
+    margin: 0 auto 0 0;
+    color: #ffffff;
+}
+.header_exam span{
+    font-family: 'Open Sans SemiBold',serif;
+    font-size: 22px;
+    color: #DC143C;
+}
+.menu{
+    display: none;
+}
+.empty{
+    height: 120px;
+}
+.exam{
+    width: 1440px;
+    margin-bottom: 60px;
+}
+.exam .info_set{
+    margin-bottom: 24px;
+}
+.exam .info_set span{
+    font-size: 24px;
+}
+.answer_for_question span{
+    font-size: 28px;
+}
+.question_text{
+    width: 1320px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.question_text span{
+    font-size: 18px;
+}
+.answer_text{
+    min-width: 1320px;
+    max-width: 1320px;
+    min-height: 160px;
+    padding-top: 15px;
+    font-size: 18px;
+}
+.exam .answer_for_question{
+    margin-bottom: 30px;
+}
+.exam form{
+    display: flex;
+    justify-content: flex-end;
+}
+.exam .button{
+    width: 400px;
+	margin-left: auto;
+}
+.exam_page .exam_wrap{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(196, 196, 196, 0.9);
+}
+.exam_page .exam_container{
+    position: relative;
+    width: 1140px;
+    margin-top: 100px;
+    padding: 20px 40px 40px 40px;
+}
+.exam_page .exam_wrap .exam_container p{
+    margin-bottom: 0;
+}
+.exam_menu{
+    display: flex;
+    justify-content: flex-end;
+}
+.exam_menu i{
+    cursor: pointer;
+    font-size: 28px;
+}
+/*Далее представлены правила для страницы "Студенческая часть - провал экзамена"*/
+.body_wrap .wrap_page{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+}
+.body_wrap .container{
+    width: 1140px;
+}
+.body_wrap .container p{
+    margin-bottom: 0;
+}
+/*Галлерея */
+.gallery{
+    width: 720px;
+    margin: 20px auto;
+}
+.panel {
+    position: relative;
+}
+.thumbs {
+    padding-top: 10px;
+    overflow: hidden;
+}
+.thumbs img, .large_image {
+    border: 1px solid gray;
+    padding: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+.large_image{
+    width: 720px;
+    height: 410px;
+    z-index: 100;
+}
+.thumbs img {
+    float: left;
+    margin-right: 6px;
+    width: 100px;
+    height: 100px;
+}
+.description {
+    background: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 20px;
+    width: 720px;
+    margin: 5px;
+}
+.fadeBlock{
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+}
+.fadeBlock .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    max-width: 50%;
+    max-height: 75%;
+}
+.description {
+    background: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 20px;
+    width: 720px;
+    margin: 5px;
+}
+/*Далее представлены правила для страницы "Студенческая часть - Смена пароля"*/
+.header_password{
+    margin-bottom: 0;
+}
+.password_change .wrap_page{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.password_change .container{
+    margin-top: -100px;
+}
+.password_change .container{
+    width: 390px;
+    padding: 40px 0;
+}
+.password_change input{
+    width: 350px;
+    margin: 0 auto;
+}
+.password_change input.middle{
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+.password_change input.middle_first{
+	margin-top: 20px;
+}
+
+.message{
+	top: 120px;
+}
+/*Отзывчивость*/
+/* 1200px - 1460px */
+@media screen and (max-width: 1460px) {
+    header{
+        max-width:100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    header a{
+        font-size: 18px;
+    }
+    header nav{
+        margin-left: 3%;
+    }
+    header .nav_ref_wrap{
+        height: 45px;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    header span, header .log_out{
+        font-size: 16px;
+    }
+    header select{
+        font-size: 16px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    header select option{
+        font-size: 16px;
+    }
+    .exam_details{
+        width: 96%;
+    }
+    .current_exams, .student_achievements, .future_exams{
+        width: 96%;
+    }
+    .header_exam p{
+        font-size: 26px;
+    }
+    .exam,.message_fail {
+        width: 96%;
+    }
+    .question_text{
+        width: 100%;
+    }
+    .answer_text{
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .exam_page .exam_container{
+        width: 90%;
+        padding: 15px 30px 30px 30px;
+    }
+}
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    p{
+        margin-bottom: 22px;
+        font-size: 28px;
+    }
+    header a{
+        font-size: 16px;
+    }
+    header nav{
+        margin-left: 3%;
+    }
+    header .nav_ref_wrap{
+        height: 45px;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    header span, header .log_out{
+        font-size: 14px;
+    }
+    header select{
+        font-size: 14px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    header select option{
+        font-size: 14px;
+    }
+    .exam .info_set{
+        margin-bottom: 22px;
+    }
+    .body_wrap .container{
+        width: 96%;
+    }
+    .field_for_appeal {
+        width: 80%;
+        max-width: 80%;
+        height: 60px;
+    }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    p{
+        margin-bottom: 20px;
+    }
+    .exam_details .discipline_name{
+        font-size: 22px;
+    }
+    .header_exam p{
+        font-size: 22px;
+    }
+    .exam .info_set{
+        margin-bottom: 20px;
+    }
+    .exam .info_set span{
+        font-size: 20px;
+    }
+    .answer_for_question > span:first-child, .answer_for_question_details > span:first-child, .answer_for_question .application{
+        font-size: 24px;
+    }
+    .gallery{
+        width: 520px;
+    }
+    .large_image{
+        width: 520px;
+        height: 310px;
+    }
+    .thumbs img {
+        width: 80px;
+        height: 80px;
+    }
+    .description {
+        width: 520px;
+    }
+    .exam_page .exam_container{
+        padding: 10px 20px 20px 20px;
+    }
+    .field_for_appeal {
+        height: 65px;
+    }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    p{
+        margin-bottom: 18px;
+        font-size: 26px;
+    }
+    .container, .inner_container{
+        padding: 20px;
+    }
+    .table_ceil{
+        padding: 6px 5px;
+    }
+    header{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 40px;
+    }
+	.exam_language{
+        width: 120px;
+        font-size: 16px;
+    }
+    .answer_text_detail{
+        margin-top: 18px;
+    }
+    .answer_text_detail span{
+        font-size: 16px;
+    }
+    .header_exam p{
+        font-size: 20px;
+    }
+    .exam_details .discipline_name{
+        font-size: 18px;
+    }
+    .exam .info_set{
+        margin-bottom: 18px;
+    }
+    .exam .info_set span{
+        font-size: 16px;
+    }
+    .question_text{
+        margin-top: 18px;
+    }
+    .question_text span{
+        font-size: 16px;
+    }
+    .exam form{
+        justify-content: center;
+    }
+    .menu{
+        display: block;
+        margin-left: auto;
+        text-align: right;
+    }
+    .fa-bars, .menu > .fa-times{
+        width: 60px;
+        height: 46px;
+    }
+    .fa-bars::before, .menu > .fa-times::before{
+        content: '';
+        font-size: 48px;
+        color: #1b1464;
+    }
+    header nav{
+        display: none;
+        position: absolute;
+        width: 100vw;
+        top:100px;
+        left:0;
+        margin-left: 0;
+        border-radius: 0 0 5px 5px;
+        background-color: #1b1464;
+        opacity: 0.9;
+        z-index: 1500;
+        transition: all 0.5s ease;
+    }
+    header nav .nav_ref_wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: #1b1464;
+    }
+    header nav .nav_ref_wrap a{
+        font-size: 20px;
+        font-family: 'Open Sans SemiBold', serif;
+        color:#ffffff;
+    }
+	.link_button, .current > .link_button{
+		background-color: #1b1464;
+		font-size: 20px;
+		font-family: 'Open Sans SemiBold', serif;
+		color:#ffffff;
+	}
+    .gallery{
+        width: 320px;
+    }
+    .large_image{
+        width: 320px;
+        height: 210px;
+    }
+    .thumbs img {
+        width: 60px;
+        height: 60px;
+    }
+    .description {
+        width: 320px;
+    }
+    .exam_page .exam_container{
+        padding: 5px 10px 10px 10px;
+    }
+	.exam .button{
+        margin: 0 auto;
+    }
+    .field_for_appeal {
+        height: 70px;
+        margin-bottom: 15px;
+    }
+    .appeal_button{
+        width: 80%;
+        max-width: 80%;
+        font-size: 16px;
+    }
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+    header{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    header img:first-child{
+       display: none;
+    }
+    .header_wrap{
+        justify-content: space-between;
+    }
+    .header_wrap span:first-child{
+        text-align: left;
+    }
+    header nav .nav_ref_wrap a{
+        font-size: 16px;
+    }
+    header .nav_ref_wrap{
+        height: 30px;
+    }
+    p{
+        margin-bottom: 14px;
+        font-size: 20px;
+    }
+    .container, .inner_container{
+        padding: 10px;
+    }
+    .not_mobile{
+        display: none;
+    }
+    .mobile{
+        display: table;
+    }
+    .table_ceil{
+        font-size: 12px;
+    }
+    .current_exams .table_main_row, .student_achievements .table_main_row, .future_exams .table_main_row{
+        font-family: 'Open Sans', serif;
+    }
+    .current_exams .table_field_name, .student_achievements .table_field_name, .future_exams .table_field_name{
+        width: 30%;
+        font-family: 'Open Sans SemiBold', serif;
+    }
+    .table.mobile{
+        margin-bottom: 20px;
+    }
+    .table.mobile:last-child{
+        margin-bottom: 0;
+    }
+	.exam_language{
+        height: 30px;
+        font-size: 14px;
+    }
+    .exam_details p:first-child{
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    .exam_details .discipline_name{
+        margin-bottom: 12px;
+        font-size: 16px;
+    }
+    .answer_for_question_details > span:first-child, .answer_for_question > span:first-child, .answer_for_question .application{
+        font-size: 18px;
+    }
+    .answer_text_detail, .question_text{
+        margin-top: 12px;
+    }
+    .answer_text_detail span, .question_text span{
+        font-size: 14px;
+    }
+    .final_mark_block{
+        margin-top: -10px;
+    }
+    .final_mark{
+        margin: 0 auto;
+    }
+    .final_mark, .final_mark_value{
+        font-size: 18px;
+    }
+	.header_exam{
+        height: 80px;
+    }
+    .header_exam p{
+        width: 200px;
+        font-size: 12px;
+        text-align: left;
+    }
+    .exam .info_set span{
+        font-size: 14px;
+    }
+    .exam > form{
+        margin-top: -10px;
+    }
+    .password_change .container{
+        width: 300px;
+    }
+    .password_change .container input{
+        width: 260px;
+    }
+    .gallery{
+        width: 220px;
+    }
+    .large_image{
+        width: 220px;
+        height: 110px;
+    }
+    .thumbs img {
+        width: 40px;
+        height: 40px;
+    }
+    .description {
+        width: 220px;
+    }
+	.exam .button{
+        width: auto;
+        padding: 0 10px;
+    }
+    .field_for_appeal {
+        height: 90px;
+    }
+    .appeal_button{
+        font-size: 14px;
+    }
+}

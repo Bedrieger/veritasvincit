@@ -1,0 +1,364 @@
+/*Общие правила*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+body, blockquote,p,span,ul,li,a{
+    font-family: 'Open Sans',serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.035em;
+}
+input, textarea{
+    display: block;
+    height: 55px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 0;
+}
+.button{
+    background-color: #DC143C;
+    color: #ffffff;
+    padding-left: 0;
+    font-family: 'Open Sans SemiBold',serif;
+    font-size: 22px;
+    text-align: center;
+    box-shadow: none;
+}
+.button:hover{
+    cursor: pointer;
+}
+input::placeholder, textarea::placeholder{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    letter-spacing: 0.035em;
+}
+.search {
+    position: relative;
+    width: 400px;
+}
+.search input[type="search"] {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    width: 400px;
+    vertical-align: middle;
+    padding-left: 56px;
+}
+.search input[type="submit"] {
+    left: 10px;
+    top: 10px;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border: none;
+    box-shadow: none;
+    background: url("img/search.png") no-repeat;
+    cursor: pointer;
+}
+.buttons_set{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+select{
+    display: block;
+    height: 55px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    border-width: 0;
+    padding-left: 10px;
+    font-family: 'Open Sans', serif;
+    font-size: 18px;
+    letter-spacing: 0.035em;
+    cursor: pointer;
+}
+option{
+    color: #000000;
+}
+textarea{
+    padding-top: 15px;
+}
+header, footer, div, p, ul, li, button, a, form, input, span, nav, textarea,section, select{
+    box-sizing: border-box;
+}
+label{
+    display: none;
+}
+a{
+    color: #DC143C;
+}
+a:hover{
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+p{
+    margin-bottom: 24px;
+    font-size: 30px;
+    text-align: center;
+}
+.container{
+    background-color: #85DBF9;
+    margin: 0 auto;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 30px;
+}
+.inner_container{
+    background-color: #C2EAF8;
+    margin: 0 auto;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 30px;
+}
+.info_set{
+    display: flex;
+    justify-content: space-between;
+}
+.info_set span:last-child{
+    text-align: right;
+}
+.table{
+    display: table;
+    margin: 0 auto;
+	border-spacing: 0;
+}
+.table_main_row, .table_row{
+    display: table-row;
+}
+.table_main_row{
+    font-family: 'Open Sans SemiBold', serif;
+}
+.table_main_row .table_ceil:first-child{
+    border-radius: 5px 0 0 0;
+}
+.table_main_row .table_ceil:last-child{
+    border-radius: 0 5px 0 0;
+}
+.table .table_row:last-child .table_ceil:last-child{
+    border-radius: 0 0 5px 0;
+}
+.table .table_row:last-child .table_ceil:first-child{
+    border-radius: 0 0 0 5px;
+}
+.table_ceil{
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #ffffff;
+    padding: 12px 10px;
+    border: 1px solid #B0B0B0;
+    text-align: center;
+}
+.table_ceil form, .special_form_block, .special_ceil{
+    display: flex;
+    justify-content: center;
+	align-items: center;
+}
+.table_ceil form input:not(.save_date){
+    height : auto;
+    width: auto;
+    padding: 0;
+    color: #DC143C;
+    font-family: 'Open Sans', serif;
+    font-size: 14px;
+    text-decoration: underline;
+    border-radius: 0;
+    box-shadow: none;
+}
+.table_ceil form input:hover{
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+}
+.mobile{
+    display: none;
+}
+.message{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 390px;
+    min-height: 50px;
+    background-color: #85DBF9;
+    left: 50%;
+    top: 20px;
+    margin-left: -195px;
+    border-radius: 5px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 12px;
+}
+/*Далее представлены правила для шапки сайта*/
+header{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    max-width: 100%;
+    background-color: #85DBF9;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 60px;
+}
+header img{
+    display: block;
+    width: 118px;
+    height: 80px;
+}
+header img:first-child{
+    border-radius: 50%;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+}
+header .nav_ref_wrap{
+    display: flex;
+    align-items: center;
+    background-color: #85DBF9;
+    height: 55px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+header nav .current{
+    background-color: #ffffff;
+}
+header a{
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+header a:hover{
+    transform: scale(1.05);
+    -webkit-transition: 250ms;
+    -moz-transition: 250ms;
+    -o-transition: 250ms;
+    transition: 250ms;
+}
+.header_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+}
+.header_wrap span:first-child{
+    text-align: right;
+}
+header span, header .log_out{
+    font-family: 'Open Sans Light', serif;
+    font-size: 18px;
+}
+header select{
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.25);
+    border-radius:  5px;
+    height: 40px;
+    font-family: 'Open Sans', serif;
+    font-size: 18px;
+    letter-spacing: 0.035em;
+    border-width: 0;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-left: 5px;
+}
+header select option{
+    font-size: 18px;
+    letter-spacing: 0.035em;
+}
+/*Далее представлены правила для страницы "Студенческая часть - Детали экзамена" и "Деканат - Сведения по студенту"*/
+.exam_details{
+    width: 1360px;
+    margin-bottom: 60px;
+}
+.exam_details p:first-child{
+    margin-bottom: 12px;
+}
+.exam_details .discipline_name{
+    font-size: 24px;
+}
+.exam_details .answer_for_question_details{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.answer_for_question_details span{
+    font-size: 28px;
+}
+.answer_text_detail{
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.answer_text_detail span{
+    font-size: 18px;
+}
+.answer_for_question_details .table{
+    width: 100%;
+}
+.answer_for_question_details .table_main_row{
+    font-family: 'Open Sans', serif;
+}
+.table_field_name{
+    width: 50%;
+    font-family: 'Open Sans SemiBold', serif;
+}
+.final_mark_block{
+    display: flex;
+}
+.final_mark{
+    font-family: 'Open Sans SemiBold', serif;
+    font-size: 24px;
+    margin-left: auto;
+}
+.final_mark_value{
+    font-family: 'Open Sans', serif;
+    font-size: 24px;
+}
+.deanery_final_appeal_mark{
+    margin-left: 0;
+    margin-right: 0;
+}
+.student_appeal_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.field_for_appeal{
+    width: 400px;
+    max-width: 400px;
+    height: 55px;
+    margin-bottom: 10px;
+}
+.appeal_button{
+    width: 200px;
+    height: 55px;
+    background-color: #DC143C;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.appeal_button:hover{
+    cursor: pointer;
+}
